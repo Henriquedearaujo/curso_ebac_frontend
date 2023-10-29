@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+form input,
+form button,
+#mensagem
+ {
+    
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form button {
+    background-color: #00030c;
+    color: #ecf0f1;
+    cursor: pointer;
+    width: 340px;
+}
+
+form {
+    background-color: rgb(170, 170, 230);
+    padding: 15px;
+    border-radius: 5%;
+   
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
