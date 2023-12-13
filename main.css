@@ -52,6 +52,12 @@ body {
     text-decoration: none;
 }
 
+textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+  }
+
 @media (max-width: 767px) {
     .carousel-item img{
         height: 280px;
