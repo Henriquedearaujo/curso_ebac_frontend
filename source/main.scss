@@ -1,0 +1,66 @@
+@use 'config/reset';
+@use 'config/variables';
+@use 'sections/produtos';
+
+body {
+    background-color: variables.$corDefundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variables.$colorHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+
+    .menu {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+    
+    .menu li a {
+        color: variables.$colorTextButton;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: variables.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    section .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variables.$mobile) {
+    section  .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
