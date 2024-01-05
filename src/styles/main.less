@@ -1,0 +1,59 @@
+@import "./config/variaveis.less";
+@import "./config/reset.less";
+@import "./sections/produtos.less";
+@import "./config/mapa.less";
+
+body {
+    background-color: #colors[corDeFundo];
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: #colors[corDoHeader];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    
+    
+    
+    .menu {
+        display: flex;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+    
+    .menu li a {
+        color: #colors[corDosTextos];
+        text-decoration: none;
+    }
+    
+}
+
+@media @breakPointMobiole{
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
