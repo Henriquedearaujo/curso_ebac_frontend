@@ -1,0 +1,16 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "Este projeto consiste em testes automatizados utilizando o framework de testes Cypress \r para verificar as funcionalidades da aplicação de Agenda de Contatos.",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
